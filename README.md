@@ -2,6 +2,8 @@
 
 日本近海のカジキをトローリングで狙うWebゲーム。`spec_01.md` の最小実装です。
 
+**遊ぶ: https://eizaburo.github.io/billfish-game-proto/**
+
 ## 動かす
 
 ```sh
@@ -11,6 +13,14 @@ npm run build    # 型チェック + 本番ビルド (dist/)
 ```
 
 依存は Vite + TypeScript のみ。描画は Canvas 2D、UIは素のDOM。
+
+## 公開
+
+GitHub Pages（https://eizaburo.github.io/billfish-game-proto/）で公開している。
+`main` に push すると `.github/workflows/deploy.yml` がビルドして自動でデプロイする。
+
+プロジェクトページ配下で配信するため、`vite.config.ts` で `base: '/billfish-game-proto/'` を指定している。
+リポジトリ名を変えたらここも変える必要がある。
 
 ## 遊び方
 
